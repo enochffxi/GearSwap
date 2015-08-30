@@ -46,14 +46,16 @@ function init_gear_sets()
     -- Fast cast sets for spells
 
     sets.precast.FC = {ammo="Impatiens",
-        head="Nahtirah Hat",ear2="Loquacious Earring",
+        head="Nahtirah Hat",neck="Orunmila's Torque",ear2="Loquacious Earring",
         body="Helios Jacket",ring1="Prolix Ring",
-        back="Swith Cape",waist="Witful Belt",feet="Regal Pumps +1"}
+        back="Lifestream Cape",waist="Witful Belt",legs="Hagondes Pants",feet="Regal Pumps +1"}
 
-    sets.precast.FC.Cure = set_combine(sets.precast.FC, {main="Tamaxchi",sub="Sor's Shield",back="Pahtli Cape"})
+    sets.precast.FC.Cure = set_combine(sets.precast.FC, {
+        main="Tamaxchi",sub="Sors Shield",
+        body="Heka's Kalasiris",
+        back="Pahtli Cape"})
 
     sets.precast.FC['Elemental Magic'] = set_combine(sets.precast.FC, {neck="Stoicheion Medal"})
-
 
     -- Weaponskill sets
     -- Default set for any weaponskill that isn't any more specifically defined
@@ -84,15 +86,16 @@ function init_gear_sets()
         back="Swith Cape +1",waist="Goading Belt",legs="Hagondes Pants",feet="Hagondes Sabots"}
 
     sets.midcast.Geomancy = {range="Dunna",
-      head="Azimuth Hood",neck="Reti Pendant",
+      head="Azimuth Hood",neck="Reti Pendant",ear1="Magnetic Earring",ear2="Gwati Earring",
       body="Bagua Tunic +1",hands="Geomancy Mitaines +1",
-      back="Lifestream Cape",legs="Bagua Pants +1",feet="Azimuth Gaiters"
+      back="Lifestream Cape",legs="Bagua Pants +1",feet="Medium's Sabots"
     }
     sets.midcast.Geomancy.Indi = sets.midcast.Geomancy
 
-    sets.midcast.Cure = {main="Tamaxchi",sub="Genbu's Shield",
-        body="Heka's Kalasiris",hands="Bokwus Gloves",ring1="Haoma Ring",ring2="Sirona's Ring",
-        back="Swith Cape +1",legs="Nares Trews",feet="Hagondes Sabots"}
+    sets.midcast.Cure = {main="Tamaxchi",sub="Sors Shield",
+        head="Psycloth Tiara",ear1="Magnetic Earring",
+        body="Heka's Kalasiris",hands="Yaoyotl Gloves",ring1="Haoma's Ring",ring2="Sirona's Ring",
+        back="Tempered Cape",legs="Assiduity Pants +1",feet="Medium's Sabots"}
 
     sets.midcast.Curaga = sets.midcast.Cure
 
@@ -100,6 +103,11 @@ function init_gear_sets()
 
     sets.midcast.Shellra = {ring1="Sheltered Ring"}
 
+    sets.midcast['Elemental Magic'] = {
+        main="Rubicundity",sub="Genbu's Shield",ammo="Dosis Tathlum",
+        head="Helios Band",neck="Eddy Necklace",ear1="Barkarole Earring",ear2="Strophadic Earring",
+        body="Azimuth Coat",hands="Helios Gloves",ring1="Strendu Ring",ring2="Sangoma Ring",
+        back="Toro Cape",waist="Sekhmet Corset",legs="Azimuth Tights",feet="Helios Boots"}
 
     --------------------------------------
     -- Idle/resting/defense/etc sets
