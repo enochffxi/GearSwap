@@ -146,7 +146,7 @@ function init_gear_sets()
     sets.idle.Pet = {main="Bolelabunga",sub="Genbu's Shield",range="Dunna",
         head="Nahtirah Hat",neck="Twilight Torque",ear1="Bloodgem Earring",ear2="Loquacious Earring",
         body="Hagondes Coat",hands="Yaoyotl Gloves",ring1="Defending Ring",ring2="Paguroidea Ring",
-        back="Umbra Cape",waist="Goading Belt",legs="Nares Trews",feet="Geomancy Sandals +1"}
+        back="Umbra Cape",waist="Isa Belt",legs="Nares Trews",feet="Geomancy Sandals +1"}
 
     sets.idle.PDT.Pet = {main="Bolelabunga",sub="Genbu's Shield",range="Nepote Bell",
         head="Nahtirah Hat",neck="Twilight Torque",ear1="Bloodgem Earring",ear2="Loquacious Earring",

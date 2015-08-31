@@ -144,13 +144,13 @@ function init_gear_sets()
 
 	sets.midcast.Pet['Elemental Magic'] = {
 		head="Rawhide Mask",ear1="Charivari Earring",ear2="Burana Earring",
-		body=gear.taeon_body_pet,hands=gear.taeon_hands_pet,ring2="Thurandaut Ring",
+		body=gear.taeon_body_pet,hands="Naga Tekko",ring2="Thurandaut Ring",
 		back="Refraction Cape",waist="Ukko Sash",legs="Karaggoz Pantaloni +1",feet="Pitre Babouches +1"}
 
 	sets.midcast.Pet.WeaponSkill = {
 		head="Karagoz Cappello +1",neck="Empath Necklace",ear1="Charivari Earring",ear2="Burana Earring",
 		body="Pitre Tobe +1",hands="Karagoz Guanti +1",ring1="Overbearing Ring",ring2="Thurandaut Ring",
-		back="Dispersal Mantle",waist="Ukko Sash",legs="Karaggoz Pantaloni +1",feet=gear.taeon_feet_pet}
+		back="Dispersal Mantle",waist="Ukko Sash",legs="Karaggoz Pantaloni +1",feet="Naga Kyahan"}
 
 
 	-- Sets to return to when not performing an action.
@@ -178,7 +178,7 @@ function init_gear_sets()
 		main="Midnights",ammo="Automat. Oil +3",
 		head="Anwig Salade",neck="Empath Necklace",ear1="Handler's Earring +1",ear2="Burana Earring",
 		body=gear.taeon_body_pet,hands="Regimen Mittens",ring1="Overbearing Ring",ring2="Thurandaut Ring",
-		back="Penetrating Cape",waist="Ukko Sash",legs=gear.taeon_legs_pet,feet=gear.taeon_feet_pet}
+		back="Penetrating Cape",waist="Ukko Sash",legs=gear.taeon_legs_pet,feet="Naga Kyahan"}
 
 	sets.idle.Pet.Engaged.Ranged = sets.idle.Pet.Engaged
 	sets.idle.Pet.Engaged.Nuke = set_combine(sets.idle.Pet.Engaged, {legs="Karaggoz Pantaloni +1",feet="Pitre Babouches +1"})
