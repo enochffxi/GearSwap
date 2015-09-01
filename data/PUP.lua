@@ -200,7 +200,7 @@ function init_gear_sets()
 		back="Dispersal Mantle",waist="Windbuffet Belt",legs=gear.taeon_legs_ta,feet=gear.taeon_feet_ta}
 
 	sets.engaged.Acc = set_combine(sets.engaged, {
-		head="Ptica Headgear",neck="Subtlety Specs",ear1="Heartseeker Earring",
+		head="Ptica Headgear",neck="Subtlety Spectacles",ear1="Heartseeker Earring",
 		body="Pitre Tobe +1",hands=gear.taeon_hands_ta,ring2="Oneiros Annulet",
 		waist="Hurch'lan Sash",legs=gear.taeon_legs_ta,feet="Karagoz Scarpe +1"
 	})
