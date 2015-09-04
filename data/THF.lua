@@ -39,8 +39,6 @@ function user_setup()
 	gear.default.weaponskill_neck = "Fotia Gorget"
 	gear.default.weaponskill_waist = "Fotia Belt"
 
-	gear.AugQuiahuiz = {name="Quiahuiz Trousers", augments={'Haste+2','"Snapshot"+2','STR+8'}}
-
 	-- Additional local binds
 	send_command('bind ^` input /ja "Flee" <me>')
 	send_command('bind ^= gs c cycle treasuremode')
@@ -67,12 +65,12 @@ function init_gear_sets()
 	sets.buff['Sneak Attack'] = {ammo="Qirmiz Tathlum",
 		head="Pillager's Bonnet +1",neck="Asperity Necklace",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
 		body="Pillager's Vest +1",hands="Skulker's Armlets +1",ring1="Rajas Ring",ring2="Epona's Ring",
-		back="Atheling Mantle",waist="Patentia Sash",legs="Pillager's Culottes",feet="Plunderer's Poulaines"}
+		back="Atheling Mantle",waist="Patentia Sash",legs="Pillager's Culottes +1",feet="Plunderer's Poulaines"}
 
 	sets.buff['Trick Attack'] = {ammo="Qirmiz Tathlum",
 		head="Pillager's Bonnet +1",neck="Asperity Necklace",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
 		body="Pillager's Vest +1",hands="Pillager's Armlets +1",ring1="Stormsoul Ring",ring2="Epona's Ring",
-		back="Atheling Mantle",waist="Patentia Sash",legs="Pillager's Culottes",feet="Plunderer's Poulaines"}
+		back="Atheling Mantle",waist="Patentia Sash",legs="Pillager's Culottes +1",feet="Plunderer's Poulaines"}
 
 	-- Actions we want to use to tag TH.
 	sets.precast.Step = sets.TreasureHunter
@@ -94,7 +92,7 @@ function init_gear_sets()
 	sets.precast.JA['Steal'] = {head="Plunderer's Bonnet",hands="Pillager's Armlets +1",legs="Pillager's Culottes +1",feet="Pillager's Poulaines +1"}
 	sets.precast.JA['Despoil'] = {legs="Skulker's Culottes",feet="Skulker's Poulaines"}
 	sets.precast.JA['Perfect Dodge'] = {hands="Plunderer's Armlets +1"}
-	sets.precast.JA['Feint'] = {legs="Plunderer's Culottes"}
+	sets.precast.JA['Feint'] = {legs="Plunderer's Culottes +1"}
 	sets.precast.JA['Mug'] = {head="Plunderer's Bonnet"}
 
 	sets.precast.JA['Sneak Attack'] = sets.buff['Sneak Attack']
@@ -105,7 +103,7 @@ function init_gear_sets()
 	sets.precast.Waltz = {ammo="Sonia's Plectrum",
 		head="Whirlpool Mask",
 		body="Pillager's Vest +1",hands="Pillager's Armlets +1",ring1="Asklepian Ring",
-		back="Iximulew Cape",waist="Caudata Belt",legs="Pillager's Culottes",feet="Dance Shoes"}
+		back="Iximulew Cape",waist="Caudata Belt",legs="Pillager's Culottes +1",feet="Dance Shoes"}
 
 	-- Don't need any special gear for Healing Waltz.
 	sets.precast.Waltz['Healing Waltz'] = {}
@@ -270,7 +268,7 @@ function init_gear_sets()
 	sets.engaged.Mod = {ammo="Thew Bomblet",
 		head="Felistris Mask",neck="Asperity Necklace",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
 		body="Skadi's Cuirie +1",hands="Pillager's Armlets +1",ring1="Oneiros Ring",ring2="Epona's Ring",
-		back="Atheling Mantle",waist="Patentia Sash",legs=gear.AugQuiahuiz,feet="Plunderer's Poulaines +1"}
+		back="Atheling Mantle",waist="Patentia Sash",feet="Plunderer's Poulaines +1"}
 
 	-- Mod set for trivial mobs (Thaumas)
 	sets.engaged.Mod2 = {ammo="Thew Bomblet",
