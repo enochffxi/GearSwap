@@ -117,7 +117,7 @@ function init_gear_sets()
 	sets.precast.WS = {
 		head=gear.taeon_head_ta,neck="Fotia Gorget",ear1="Bladeborn Earring",ear2="Steelflash Earring",
 		body=gear.taeon_body_ta,hands=gear.taeon_hands_ta,ring1="Rajas Ring",ring2="Epona's Ring",
-		back="Buquwik Cape",waist="Fotia Belt",legs=gear.taeon_legs_ta,feet=gear.taeon_feet_ta}
+		back="Buquwik Cape",waist="Fotia Belt",legs="Samnuha Tights",feet=gear.taeon_feet_ta}
 
 	-- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
 	sets.precast.WS['Stringing Pummel'] = set_combine(sets.precast.WS, {
@@ -139,13 +139,13 @@ function init_gear_sets()
 	-- Midcast sets for pet actions
 	sets.midcast.Pet.Cure = {
 		head="Naga Somen",
-		body=gear.taeon_body_pet,hands="Regimen Mittens",ring1="Kunaji Ring",ring2="Thurandaut Ring",
+		body="Naga Samue",hands="Regimen Mittens",ring1="Kunaji Ring",ring2="Thurandaut Ring",
 		back="Refraction Cape",waist="Ukko Sash",legs="Naga Hakama",feet="Foire Bab. +1"}
 
 	sets.midcast.Pet['Elemental Magic'] = {
 		head="Rawhide Mask",ear1="Charivari Earring",ear2="Burana Earring",
 		body=gear.taeon_body_pet,hands="Naga Tekko",ring2="Thurandaut Ring",
-		back="Refraction Cape",waist="Ukko Sash",legs="Karaggoz Pantaloni +1",feet="Pitre Babouches +1"}
+		back="Argochampsa Mantle",waist="Ukko Sash",legs="Karaggoz Pantaloni +1",feet="Pitre Babouches +1"}
 
 	sets.midcast.Pet.WeaponSkill = {
 		head="Karagoz Cappello +1",neck="Empath Necklace",ear1="Charivari Earring",ear2="Burana Earring",

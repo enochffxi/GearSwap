@@ -229,8 +229,8 @@ function init_gear_sets()
 
 	sets.idle = {ammo="Thew Bomblet",
 		head="Ocelomeh Headpiece +1",neck="Wiglen Gorget",ear1="Dawn Earring",ear2="Colossus's Earring",
-		body="Plunderer's Vest +1",hands="Plunderer's Armlets +1",ring1="Sheltered Ring",ring2="Shneddick Ring",
-		back="Shadow Mantle",waist="Flume Belt",legs="Taeon Tights",feet="Taeon Boots"}
+		body="Plunderer's Vest +1",hands="Plunderer's Armlets +1",ring1="Sheltered Ring",ring2="Paguroidea Ring",
+		back="Shadow Mantle",waist="Flume Belt",legs="Taeon Tights",feet="Skadi's Jambeaux +1"}
 
 	-- Defense sets
 
