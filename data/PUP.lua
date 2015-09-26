@@ -148,7 +148,7 @@ function init_gear_sets()
 		back="Argochampsa Mantle",waist="Ukko Sash",legs="Karaggoz Pantaloni +1",feet="Pitre Babouches +1"}
 
 	sets.midcast.Pet.WeaponSkill = {
-		head="Karagoz Cappello +1",neck="Empath Necklace",ear1="Charivari Earring",ear2="Burana Earring",
+		head="Karagoz Capello +1",neck="Empath Necklace",ear1="Charivari Earring",ear2="Burana Earring",
 		body="Pitre Tobe +1",hands="Karagoz Guanti +1",ring1="Overbearing Ring",ring2="Thurandaut Ring",
 		back="Dispersal Mantle",waist="Ukko Sash",legs="Karaggoz Pantaloni +1",feet="Naga Kyahan"}
 
@@ -157,7 +157,7 @@ function init_gear_sets()
 
 	-- Resting sets
 	sets.resting = {
-		head="Pitre Taj +1",neck="Wiglen Gorget",ear1="Dawn Earring",ear2="Burana Earring",
+		head="Pitre Taj +1",neck="Wiglen Gorget",ear1="Infused Earring",ear2="Burana Earring",
 		ring1="Sheltered Ring",ring2="Paguroidea Ring",
 		back="Contriver's Cape"}
 
@@ -165,7 +165,7 @@ function init_gear_sets()
 
 	sets.idle = {
 		main="Kenkonken",ammo="Automat. Oil +3",
-		head="Pitre Taj +1",neck="Wiglen Gorget",ear1="Dawn Earring",ear2="Burana Earring",
+		head="Pitre Taj +1",neck="Wiglen Gorget",ear1="Infused Earring",ear2="Burana Earring",
 		body=gear.taeon_body_ta,hands="Count's Cuffs",ring1="Sheltered Ring",ring2="Paguroidea Ring",
 		back="Kumbira Cape",waist="Lycopodium Sash",legs="Samnuha Tights",feet="Hermes' Sandals +1"}
 

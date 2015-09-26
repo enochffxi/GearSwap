@@ -133,36 +133,23 @@ function init_gear_sets()
     -- Idle sets
 
     sets.idle = {main="Bolelabunga",sub="Genbu's Shield",range="Dunna",
-        head="Azimuth Hood",neck="Wiglen Gorget",ear1="Dawn Earring",ear2="Colossus's Earring",
+        head="Befouled Crown",neck="Wiglen Gorget",ear1="Infused Earring",ear2="Ethereal Earring",
         body="Geomancy Tunic +1",hands="Bagua Mitaines +1",ring1="Sheltered Ring",ring2="Paguroidea Ring",
         back="Lifestream Cape",waist="Lycopodium Sash",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}
 
-    sets.idle.PDT = {main="Bolelabunga",sub="Genbu's Shield",range="Dunna",
-        head="Nahtirah Hat",neck="Twilight Torque",ear1="Bloodgem Earring",ear2="Loquacious Earring",
-        body="Hagondes Coat",hands="Yaoyotl Gloves",ring1="Defending Ring",ring2="Paguroidea Ring",
-        back="Umbra Cape",waist="Goading Belt",legs="Nares Trews",feet="Geomancy Sandals +1"}
+    sets.idle.PDT = sets.idle
 
     -- .Pet sets are for when Luopan is present.
     sets.idle.Pet = {main="Bolelabunga",sub="Genbu's Shield",range="Dunna",
-        head="Nahtirah Hat",neck="Twilight Torque",ear1="Bloodgem Earring",ear2="Loquacious Earring",
-        body="Hagondes Coat",hands="Yaoyotl Gloves",ring1="Defending Ring",ring2="Paguroidea Ring",
-        back="Umbra Cape",waist="Isa Belt",legs="Nares Trews",feet="Geomancy Sandals +1"}
+        head="Azimuth Hood",neck="Twilight Torque",ear1="Handler's Earring +1",ear2="Ethereal Earring",
+        body="Geomancy Tunic +1",hands="Geomancy Mitaines +1",ring1="Thurandaut Ring",ring2="Paguroidea Ring",
+        back="Lifestream Cape",waist="Isa Belt",legs="Psycloth Lappas",feet="Bagua Sandals +1"}
 
-    sets.idle.PDT.Pet = {main="Bolelabunga",sub="Genbu's Shield",range="Nepote Bell",
-        head="Nahtirah Hat",neck="Twilight Torque",ear1="Bloodgem Earring",ear2="Loquacious Earring",
-        body="Hagondes Coat",hands="Yaoyotl Gloves",ring1="Defending Ring",ring2="Paguroidea Ring",
-        back="Umbra Cape",waist="Goading Belt",legs="Nares Trews",feet="Geomancy Sandals +1"}
+    sets.idle.PDT.Pet = sets.idle.Pet
 
     -- .Indi sets are for when an Indi-spell is active.
     sets.idle.Indi = set_combine(sets.idle, {legs="Bagua Pants +1"})
-    sets.idle.Pet.Indi = set_combine(sets.idle.Pet, {legs="Bagua Pants +1"})
     sets.idle.PDT.Indi = set_combine(sets.idle.PDT, {legs="Bagua Pants +1"})
-    sets.idle.PDT.Pet.Indi = set_combine(sets.idle.PDT.Pet, {legs="Bagua Pants +1"})
-
-    sets.idle.Town = {main="Bolelabunga",sub="Genbu's Shield",range="Dunna",
-        head="Nefer Khat +1",neck="Wiglen Gorget",ear1="Bloodgem Earring",ear2="Loquacious Earring",
-        body="Heka's Kalasiris",hands="Serpentes Cuffs",ring1="Sheltered Ring",ring2="Paguroidea Ring",
-        back="Umbra Cape",waist="Goading Belt",legs="Nares Trews",feet="Geomancy Sandals +1"}
 
     sets.idle.Weak = {main="Bolelabunga",sub="Genbu's Shield",range="Dunna",
         head="Nefer Khat +1",neck="Wiglen Gorget",ear1="Bloodgem Earring",ear2="Loquacious Earring",
