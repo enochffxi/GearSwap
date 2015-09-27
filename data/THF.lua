@@ -62,12 +62,12 @@ function init_gear_sets()
 	sets.TreasureHunter = {hands="Plunderer's Armlets +1", feet="Skulker's Poulaines +1"}
 	sets.ExtraRegen = {head="Ocelomeh Headpiece +1"}
 
-	sets.buff['Sneak Attack'] = {ammo="Qirmiz Tathlum",
+	sets.buff['Sneak Attack'] = {ammo="Ginsen",
 		head="Pillager's Bonnet +1",neck="Asperity Necklace",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
 		body="Pillager's Vest +1",hands="Skulker's Armlets +1",ring1="Rajas Ring",ring2="Epona's Ring",
 		back="Atheling Mantle",waist="Patentia Sash",legs="Pillager's Culottes +1",feet="Plunderer's Poulaines"}
 
-	sets.buff['Trick Attack'] = {ammo="Qirmiz Tathlum",
+	sets.buff['Trick Attack'] = {ammo="Ginsen",
 		head="Pillager's Bonnet +1",neck="Asperity Necklace",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
 		body="Pillager's Vest +1",hands="Pillager's Armlets +1",ring1="Stormsoul Ring",ring2="Epona's Ring",
 		back="Atheling Mantle",waist="Patentia Sash",legs="Pillager's Culottes +1",feet="Plunderer's Poulaines"}
@@ -90,7 +90,7 @@ function init_gear_sets()
 	sets.precast.JA['Hide'] = {body="Pillager's Vest +1"}
 	sets.precast.JA['Conspirator'] = {body="Skulker's Vest"}
 	sets.precast.JA['Steal'] = {head="Plunderer's Bonnet",hands="Pillager's Armlets +1",legs="Pillager's Culottes +1",feet="Pillager's Poulaines +1"}
-	sets.precast.JA['Despoil'] = {legs="Skulker's Culottes",feet="Skulker's Poulaines"}
+	sets.precast.JA['Despoil'] = {legs="Skulker's Culottes +1",feet="Skulker's Poulaines"}
 	sets.precast.JA['Perfect Dodge'] = {hands="Plunderer's Armlets +1"}
 	sets.precast.JA['Feint'] = {legs="Plunderer's Culottes +1"}
 	sets.precast.JA['Mug'] = {head="Plunderer's Bonnet"}
@@ -122,10 +122,10 @@ function init_gear_sets()
 	-- Weaponskill sets
 
 	-- Default set for any weaponskill that isn't any more specifically defined
-	sets.precast.WS = {ammo="Thew Bomblet",
-		head="Whirlpool Mask",neck="Fotia Gorget",ear1="Bladeborn Earring",ear2="Steelflash Earring",
+	sets.precast.WS = {ammo="Ginsen",
+		head="Taeon Chapeau",neck="Fotia Gorget",ear1="Bladeborn Earring",ear2="Steelflash Earring",
 		body="Plunderer's Vest +1",hands="Plunderer's Armlets +1",ring1="Rajas Ring",ring2="Epona's Ring",
-		back="Atheling Mantle",waist="Fotia Belt",legs="Taeon Tights",feet="Taeon Boots"}
+		back="Atheling Mantle",waist="Fotia Belt",legs="Samnuha Tights",feet="Taeon Boots"}
 	sets.precast.WS.Acc = set_combine(sets.precast.WS, {ammo="Honed Tathlum", back="Letalis Mantle"})
 
 	-- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
@@ -220,17 +220,15 @@ function init_gear_sets()
 	-- Idle/resting/defense sets
 	--------------------------------------
 
-	-- Resting sets
-	sets.resting = {head="Ocelomeh Headpiece +1",neck="Wiglen Gorget",
-		ring1="Sheltered Ring",ring2="Paguroidea Ring"}
-
-
 	-- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 
-	sets.idle = {ammo="Thew Bomblet",
-		head="Ocelomeh Headpiece +1",neck="Wiglen Gorget",ear1="Dawn Earring",ear2="Colossus's Earring",
+	sets.idle = {ammo="Ginsen",
+		head="Taeon Chapeau",neck="Wiglen Gorget",ear1="Dawn Earring",ear2="Infused Earring",
 		body="Plunderer's Vest +1",hands="Plunderer's Armlets +1",ring1="Sheltered Ring",ring2="Paguroidea Ring",
-		back="Shadow Mantle",waist="Flume Belt",legs="Taeon Tights",feet="Skadi's Jambeaux +1"}
+		back="Shadow Mantle",waist="Flume Belt",legs="Samnuha Tights",feet="Pillager's Poulaines +1"}
+
+		-- Resting sets
+		sets.resting = sets.idle
 
 	-- Defense sets
 
