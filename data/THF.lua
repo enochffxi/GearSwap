@@ -253,14 +253,14 @@ function init_gear_sets()
 	--------------------------------------
 
 	-- Normal melee group
-	sets.engaged = {ammo="Thew Bomblet",
+	sets.engaged = {ammo="Ginsen",
 		head="Taeon Chapeau",neck="Asperity Necklace",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
 		body="Taeon Tabard",hands="Taeon Gloves",ring1="Oneiros Ring",ring2="Epona's Ring",
-		back="Canny Cape",waist="Windbuffet Belt",legs="Taeon Tights",feet="Taeon Boots"}
-	sets.engaged.Acc = {ammo="Honed Tathlum",
-		head="Skulker's Bonnet",neck="Rancor Collar",ear1="Steelflash Earring",ear2="Heartseeker Earring",
-		body="Taeon Tabard",hands="Plunderer's Armlets +1",ring1="Oneiros Ring",ring2="Epona's Ring",
-		back="Canny Cape",waist="Anguinus Belt",legs="Pillager's Culottes +1",feet="Taeon Boots"}
+		back="Canny Cape",waist="Windbuffet Belt",legs="Samnuha Tights",feet="Taeon Boots"}
+	sets.engaged.Acc = {ammo="Amar Cluster",
+		head="Skulker's Bonnet",neck="Subtlety Spectacles",ear1="Steelflash Earring",ear2="Heartseeker Earring",
+		body="Pillager's Vest +1",hands="Plunderer's Armlets +1",ring1="Oneiros Ring",ring2="Epona's Ring",
+		back="Canny Cape",waist="Hurch'lan Sash",legs="Samnuha Tights",feet="Taeon Boots"}
 
 	-- Mod set for trivial mobs (Skadi+1)
 	sets.engaged.Mod = {ammo="Thew Bomblet",
