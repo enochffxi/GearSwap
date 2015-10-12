@@ -109,13 +109,13 @@ function init_gear_sets()
         main="Rubicundity",sub="Genbu's Shield",ammo="Dosis Tathlum",
         head="Helios Band",neck="Eddy Necklace",ear1="Barkarole Earring",ear2="Strophadic Earring",
         body="Azimuth Coat",hands="Helios Gloves",ring1="Strendu Ring",ring2="Sangoma Ring",
-        back="Toro Cape",waist="Sekhmet Corset",legs="Azimuth Tights",feet="Helios Boots"}
+        back="Toro Cape",waist="Sekhmet Corset",legs="Azimuth Tights +1",feet="Helios Boots"}
 
     sets.midcast.Drain = {
       main="Rubicundity",sub="Genbu's Shield",
       head="Bagua Galero +1",neck="Eddy Necklace",ear1="Barkarole Earring",ear2="Hirudinea Earring",
       body="Psycloth Vest",hands="Helios Gloves",ring1="Sangoma Ring",ring2="Excelsis Ring",
-      waist="Fucho-no-obi",legs="Azimuth Tights",feet="Helios Boots"
+      waist="Fucho-no-obi",legs="Azimuth Tights +1",feet="Helios Boots"
     }
 
     sets.midcast.Aspir = sets.midcast.Drain

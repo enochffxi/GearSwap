@@ -95,7 +95,7 @@ function init_gear_sets()
   sets.precast.JA['Tactical Switch'] = {feet="Karagoz Scarpe +1"}
 
   sets.precast.JA['Repair'] = {
-    ammo="Automaton Oil +3",
+    main="Nibiru Sainti",ammo="Automaton Oil +3",
     head=gear.taeon_head_pet,ear1="Guignol Earring",ear2="Pratik Earring",
     body=gear.taeon_body_pet,hands=gear.taeon_hands_pet,
     legs="Desultor Tassets",feet="Foire Bab. +1"
