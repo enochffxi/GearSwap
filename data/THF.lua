@@ -59,8 +59,7 @@ function init_gear_sets()
 	-- Special sets (required by rules)
 	--------------------------------------
 
-	sets.TreasureHunter = {hands="Plunderer's Armlets +1", feet="Skulker's Poulaines +1"}
-	sets.ExtraRegen = {head="Ocelomeh Headpiece +1"}
+	sets.TreasureHunter = {hands="Plunderer's Armlets +1", feet="Skulker's Poulaines +1", waist="Chaac Belt"}
 
 	sets.buff['Sneak Attack'] = {ammo="Ginsen",
 		head="Pillager's Bonnet +1",neck="Asperity Necklace",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
@@ -73,8 +72,8 @@ function init_gear_sets()
 		back="Atheling Mantle",waist="Patentia Sash",legs="Pillager's Culottes +1",feet="Plunderer's Poulaines"}
 
 	-- Actions we want to use to tag TH.
-	sets.precast.Step = sets.TreasureHunter
-	sets.precast.Flourish1 = sets.TreasureHunter
+	sets.precast.Step = set_combine(sets.engaged.Acc, {hands="Plunderer's Armlets +1", feet="Skulker's Poulaines +1"})
+	sets.precast.Flourish1 = sets.precast.Step
 	sets.precast.JA.Provoke = sets.TreasureHunter
 
 
