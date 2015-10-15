@@ -48,7 +48,7 @@ function init_gear_sets()
     sets.precast.FC = {ammo="Impatiens",
         head="Nahtirah Hat",neck="Orunmila's Torque",ear2="Loquacious Earring",
         body="Helios Jacket",ring1="Prolix Ring",
-        back="Lifestream Cape",waist="Witful Belt",legs="Hagondes Pants",feet="Regal Pumps +1"}
+        back="Lifestream Cape",waist="Witful Belt",legs="Geomancy Pants +1",feet="Regal Pumps +1"}
 
     sets.precast.FC.Cure = set_combine(sets.precast.FC, {
         main="Tamaxchi",sub="Sors Shield",
@@ -82,11 +82,6 @@ function init_gear_sets()
     --------------------------------------
 
     -- Base fast recast for spells
-    sets.midcast.FastRecast = {
-        head="Zelus Tiara",ear2="Loquacious Earring",
-        body="Hagondes Coat",hands="Bokwus Gloves",ring1="Prolix Ring",
-        back="Swith Cape +1",waist="Goading Belt",legs="Hagondes Pants",feet="Hagondes Sabots"}
-
     sets.midcast.Geomancy = {range="Dunna",
       head="Azimuth Hood",neck="Reti Pendant",ear1="Magnetic Earring",ear2="Gwati Earring",
       body="Bagua Tunic +1",hands="Geomancy Mitaines +1",
@@ -95,7 +90,7 @@ function init_gear_sets()
     sets.midcast.Geomancy.Indi = sets.midcast.Geomancy
 
     sets.midcast.Cure = {main="Tamaxchi",sub="Sors Shield",
-        head="Psycloth Tiara",ear1="Magnetic Earring",
+        head="Psycloth Tiara",ear1="Beatific Earring",
         body="Heka's Kalasiris",hands="Telchine Gloves",ring1="Haoma's Ring",ring2="Sirona's Ring",
         back="Tempered Cape",legs="Assiduity Pants +1",feet="Medium's Sabots"}
 
@@ -115,7 +110,7 @@ function init_gear_sets()
       main="Rubicundity",sub="Genbu's Shield",
       head="Bagua Galero +1",neck="Eddy Necklace",ear1="Barkarole Earring",ear2="Hirudinea Earring",
       body="Psycloth Vest",hands="Helios Gloves",ring1="Sangoma Ring",ring2="Excelsis Ring",
-      waist="Fucho-no-obi",legs="Azimuth Tights +1",feet="Helios Boots"
+      back="Refraction Cape",waist="Fucho-no-obi",legs="Azimuth Tights +1",feet="Medium's Sabots"
     }
 
     sets.midcast.Aspir = sets.midcast.Drain
