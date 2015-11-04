@@ -87,7 +87,7 @@ function init_gear_sets()
       body="Bagua Tunic +1",hands="Geomancy Mitaines +1",
       back="Lifestream Cape",legs="Bagua Pants +1",feet="Medium's Sabots"
     }
-    sets.midcast.Geomancy.Indi = sets.midcast.Geomancy
+    sets.midcast.Geomancy.Indi = set_combine(sets.midcast.Geomancy,{feet="Azimuth Gaiters +1"})
 
     sets.midcast.Cure = {main="Tamaxchi",sub="Sors Shield",
         head="Psycloth Tiara",ear1="Beatific Earring",
@@ -104,12 +104,12 @@ function init_gear_sets()
         main="Rubicundity",sub="Genbu's Shield",ammo="Dosis Tathlum",
         head="Helios Band",neck="Eddy Necklace",ear1="Barkarole Earring",ear2="Strophadic Earring",
         body="Azimuth Coat",hands="Helios Gloves",ring1="Strendu Ring",ring2="Sangoma Ring",
-        back="Toro Cape",waist="Sekhmet Corset",legs="Azimuth Tights +1",feet="Helios Boots"}
+        back="Toro Cape",waist="Refoccilation Stone",legs="Azimuth Tights +1",feet="Helios Boots"}
 
     sets.midcast.Drain = {
       main="Rubicundity",sub="Genbu's Shield",
       head="Bagua Galero +1",neck="Eddy Necklace",ear1="Barkarole Earring",ear2="Hirudinea Earring",
-      body="Psycloth Vest",hands="Helios Gloves",ring1="Sangoma Ring",ring2="Excelsis Ring",
+      body="Psycloth Vest",hands="Helios Gloves",ring1="Evanescence Ring",ring2="Excelsis Ring",
       back="Refraction Cape",waist="Fucho-no-obi",legs="Azimuth Tights +1",feet="Medium's Sabots"
     }
 

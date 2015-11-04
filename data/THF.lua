@@ -64,12 +64,12 @@ function init_gear_sets()
 	sets.buff['Sneak Attack'] = {ammo="Ginsen",
 		head="Pillager's Bonnet +1",neck="Asperity Necklace",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
 		body="Pillager's Vest +1",hands="Skulker's Armlets +1",ring1="Rajas Ring",ring2="Epona's Ring",
-		back="Atheling Mantle",waist="Patentia Sash",legs="Pillager's Culottes +1",feet="Plunderer's Poulaines"}
+		back="Atheling Mantle",waist="Patentia Sash",legs="Pillager's Culottes +1",feet="Plunderer's Poulaines +1"}
 
 	sets.buff['Trick Attack'] = {ammo="Ginsen",
 		head="Pillager's Bonnet +1",neck="Asperity Necklace",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
 		body="Pillager's Vest +1",hands="Pillager's Armlets +1",ring1="Stormsoul Ring",ring2="Epona's Ring",
-		back="Atheling Mantle",waist="Patentia Sash",legs="Pillager's Culottes +1",feet="Plunderer's Poulaines"}
+		back="Atheling Mantle",waist="Patentia Sash",legs="Pillager's Culottes +1",feet="Plunderer's Poulaines +1"}
 
 	-- Actions we want to use to tag TH.
 	sets.precast.Step = set_combine(sets.engaged.Acc, {hands="Plunderer's Armlets +1", feet="Skulker's Poulaines +1"})
@@ -84,7 +84,7 @@ function init_gear_sets()
 	-- Precast sets to enhance JAs
 	sets.precast.JA['Collaborator'] = {head="Skulker's Bonnet"}
 	sets.precast.JA['Accomplice'] = {head="Skulker's Bonnet"}
-	sets.precast.JA["Assassin's Charge"] = {feet="Plunderer's Poulaines"}
+	sets.precast.JA["Assassin's Charge"] = {feet="Plunderer's Poulaines +1"}
 	sets.precast.JA['Flee'] = {feet="Pillager's Poulaines +1"}
 	sets.precast.JA['Hide'] = {body="Pillager's Vest +1"}
 	sets.precast.JA['Conspirator'] = {body="Skulker's Vest"}

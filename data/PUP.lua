@@ -42,20 +42,10 @@ end
 -- Setup vars that are user-dependent.  Can override this function in a sidecar file.
 function user_setup()
   -- Options: Override default values
-  state.OffenseMode:options('Normal', 'Acc')
+  state.OffenseMode:options('Normal', 'Acc', 'Fodder')
   state.WeaponskillMode:options('Normal', 'Acc', 'Fodder')
   state.PhysicalDefenseMode:options('PDT', 'Evasion')
   state.MagicalDefenseMode:options('MDT')
-
-  -- Default maneuvers 1, 2, 3 and 4 for each pet mode.
-  defaultManeuvers = {
-    ['Melee'] = {'Fire Maneuver', 'Thunder Maneuver', 'Wind Maneuver', 'Light Maneuver'},
-    ['Ranged'] = {'Wind Maneuver', 'Fire Maneuver', 'Thunder Maneuver', 'Light Maneuver'},
-    ['Tank'] = {'Earth Maneuver', 'Dark Maneuver', 'Light Maneuver', 'Wind Maneuver'},
-    ['Magic'] = {'Ice Maneuver', 'Light Maneuver', 'Dark Maneuver', 'Earth Maneuver'},
-    ['Heal'] = {'Light Maneuver', 'Dark Maneuver', 'Water Maneuver', 'Earth Maneuver'},
-    ['Nuke'] = {'Ice Maneuver', 'Dark Maneuver', 'Light Maneuver', 'Earth Maneuver'}
-  }
 
   gear.taeon_head_ta   = { name = "Taeon Chapeau", augments = {'STR+5 DEX+5', 'Accuracy+19 Attack+19', '"Triple Atk."+2'}}
   gear.taeon_head_pet  = { name = "Taeon Chapeau", augments = {'"Repair" potency +5%', 'Pet: Damage taken -4%', 'Pet: Accuracy+18 Pet: Rng.Acc.+18'}}
@@ -105,8 +95,6 @@ function init_gear_sets()
 
   sets.precast.JA.Maneuver = {main="Kenkonken",neck="Bfn. Collar +1",ear2="Burana Earring",body="Karagoz Farsetto +1",hands="Foire Dastanas +1",back="Dispersal Mantle"}
 
-
-
   -- Waltz set (chr and vit)
   sets.precast.Waltz = {
     head=gear.taeon_head_ta,ear1="Roundel Earring",
@@ -132,12 +120,6 @@ function init_gear_sets()
   sets.precast.WS['Victory Smite'] = set_combine(sets.precast.WS, {
     ear1="Brutal Earring",ear2="Moonshade Earring",
     ring1="Pyrosoul Ring"})
-
-  sets.precast.WS['Shijin Spiral'] = set_combine(sets.precast.WS, {
-    neck="Fotia Gorget",
-    ring1="Thundersoul Ring",
-    back="Kayapa Cape"})
-
 
   -- Midcast Sets
 
@@ -167,16 +149,14 @@ function init_gear_sets()
     back="Contriver's Cape"}
 
   -- Idle sets
-
   sets.idle = {
     main="Kenkonken",ammo="Automat. Oil +3",
     head="Pitre Taj +1",neck="Wiglen Gorget",ear1="Infused Earring",ear2="Burana Earring",
     body=gear.taeon_body_ta,hands="Count's Cuffs",ring1="Sheltered Ring",ring2="Paguroidea Ring",
-    back="Kumbira Cape",waist="Lycopodium Sash",legs="Samnuha Tights",feet="Hermes' Sandals +1"}
+    back="Kumbira Cape",waist="Lycopodium Sash",legs="Rao Haidate +1",feet="Hermes' Sandals +1"}
 
   -- Set for idle while pet is out (eg: pet regen gear)
   sets.idle.Pet = set_combine(sets.idle, {main="Ohtas",neck="Empath Necklace",ring2="Thurandaut Ring",back="Contriver's Cape",waist="Isa Belt"})
---	sets.idle.Pet.Tank = set_combine(sets.idle.Pet.Engaged, {main="Ohtas",ear1="Handler's Earring +1"})
 
   -- Idle sets to wear while pet is engaged
   sets.idle.Pet.Engaged = {
@@ -188,7 +168,10 @@ function init_gear_sets()
   sets.idle.Pet.Engaged.Ranged = sets.idle.Pet.Engaged
   sets.idle.Pet.Engaged.Nuke = set_combine(sets.idle.Pet.Engaged, {legs="Karaggoz Pantaloni +1",feet="Pitre Babouches +1"})
   sets.idle.Pet.Engaged.Magic = sets.idle.Pet.Engaged
---	sets.idle.Pet.Engaged.Tank = set_combine(sets.idle.Pet.Tank, {main="Ohrmazd"})
+
+ 	sets.idle.Pet.Engaged.Tank = set_combine(sets.idle.Pet.Engaged, {
+    head="Rao Kabuto +1",
+    waist="Isa Belt", legs="Rao Haidate +1"})
 
   -- Engaged sets
 

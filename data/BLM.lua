@@ -72,7 +72,7 @@ function init_gear_sets()
     sets.precast.FC = {ammo="Impatiens",
         head="Nahtirah Hat",ear2="Loquacious Earring",
         body="Helios Jacket",ring1="Prolix Ring",
-        waist="Witful Belt",feet="Regal Pumps +1"}
+        waist="Witful Belt",legs="Psycloth Lappas",feet="Regal Pumps +1"}
 
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash"})
 
