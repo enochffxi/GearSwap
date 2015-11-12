@@ -531,9 +531,9 @@ function refresh_group_info(dt,user_event_flag)
     alliance.count = 0
     
     -- Reassign to the new structure
-    alliance[1] = c_alliance[1]
-    alliance[2] = c_alliance[2]
-    alliance[3] = c_alliance[3]
+    table.reassign(alliance[1],c_alliance[1])
+    table.reassign(alliance[2],c_alliance[2])
+    table.reassign(alliance[3],c_alliance[3])
     alliance.count = c_alliance.count
 end
 
@@ -672,7 +672,7 @@ function pathsearch(files_list)
     -- data
     
     local gearswap_data = windower.addon_path .. 'data/'
-    local gearswap_appdata = os.getenv('APPDATA') .. '/Windower/GearSwap/'
+    local gearswap_appdata = (os.getenv('APPDATA') or '') .. '/Windower/GearSwap/'
     
     local search_path = {
         [1] = windower.addon_path .. 'libs-dev/',
