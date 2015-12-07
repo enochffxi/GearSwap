@@ -46,7 +46,7 @@ function init_gear_sets()
     -- Fast cast sets for spells
 
     sets.precast.FC = {main="Solstice",ammo="Impatiens",
-        head="Nahtirah Hat",neck="Orunmila's Torque",ear2="Loquacious Earring",
+        head="Psycloth Tiara",neck="Orunmila's Torque",ear2="Loquacious Earring",
         body="Helios Jacket",ring1="Prolix Ring",
         back="Lifestream Cape",waist="Witful Belt",legs="Geomancy Pants +1",feet="Regal Pumps +1"}
 
@@ -100,6 +100,8 @@ function init_gear_sets()
 
     sets.midcast.Shellra = {ring1="Sheltered Ring"}
 
+    sets.midcast.Refresh = {back="Grapevine Cape",waist="Gishdubar Sash"}
+
     sets.midcast['Elemental Magic'] = {
         main="Rubicundity",sub="Genbu's Shield",ammo="Dosis Tathlum",
         head="Helios Band",neck="Eddy Necklace",ear1="Barkarole Earring",ear2="Strophadic Earring",
@@ -119,16 +121,12 @@ function init_gear_sets()
     -- Idle/resting/defense/etc sets
     --------------------------------------
 
-    -- Resting sets
     sets.resting = {head="Nefer Khat +1",neck="Wiglen Gorget",
         body="Heka's Kalasiris",hands="Serpentes Cuffs",ring1="Sheltered Ring",ring2="Paguroidea Ring",
         waist="Austerity Belt",legs="Nares Trews",feet="Chelona Boots +1"}
 
-
-    -- Idle sets
-
     sets.idle = {main="Bolelabunga",sub="Genbu's Shield",range="Dunna",
-        head="Befouled Crown",neck="Wiglen Gorget",ear1="Infused Earring",ear2="Ethereal Earring",
+        head="Befouled Crown",neck="Sanctity Necklace",ear1="Infused Earring",ear2="Ethereal Earring",
         body="Azimuth Coat +1",hands="Bagua Mitaines +1",ring1="Sheltered Ring",ring2="Paguroidea Ring",
         back="Lifestream Cape",waist="Lycopodium Sash",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}
 
@@ -137,7 +135,7 @@ function init_gear_sets()
     -- .Pet sets are for when Luopan is present.
     sets.idle.Pet = {main="Solstice",sub="Genbu's Shield",range="Dunna",
         head="Azimuth Hood",neck="Twilight Torque",ear1="Handler's Earring +1",ear2="Ethereal Earring",
-        body="Azimuth Coat +1",hands="Geomancy Mitaines +1",ring1="Thurandaut Ring",ring2="Paguroidea Ring",
+        body="Azimuth Coat +1",hands="Geomancy Mitaines +1",ring1="Thurandaut Ring",ring2="Defending Ring",
         back="Lifestream Cape",waist="Isa Belt",legs="Psycloth Lappas",feet="Bagua Sandals +1"}
 
     sets.idle.PDT.Pet = sets.idle.Pet
@@ -146,19 +144,12 @@ function init_gear_sets()
     sets.idle.Indi = set_combine(sets.idle, {legs="Bagua Pants +1"})
     sets.idle.PDT.Indi = set_combine(sets.idle.PDT, {legs="Bagua Pants +1"})
 
-    sets.idle.Weak = {main="Bolelabunga",sub="Genbu's Shield",range="Dunna",
-        head="Nefer Khat +1",neck="Wiglen Gorget",ear1="Bloodgem Earring",ear2="Loquacious Earring",
-        body="Azimuth Coat +1",hands="Serpentes Cuffs",ring1="Sheltered Ring",ring2="Paguroidea Ring",
-        back="Umbra Cape",waist="Goading Belt",legs="Nares Trews",feet="Geomancy Sandals +1"}
-
-    -- Defense sets
-
-    sets.defense.PDT = {range="Nepote Bell",
+    sets.defense.PDT = {
         head="Hagondes Hat",neck="Wiglen Gorget",ear1="Bloodgem Earring",ear2="Loquacious Earring",
         body="Hagondes Coat",hands="Yaoyotl Gloves",ring1="Defending Ring",ring2=gear.DarkRing.physical,
         back="Umbra Cape",waist="Goading Belt",legs="Hagondes Pants",feet="Hagondes Sabots"}
 
-    sets.defense.MDT = {range="Nepote Bell",
+    sets.defense.MDT = {
         head="Nahtirah Hat",neck="Wiglen Gorget",ear1="Bloodgem Earring",ear2="Loquacious Earring",
         body="Vanir Cotehardie",hands="Yaoyotl Gloves",ring1="Defending Ring",ring2="Shadow Ring",
         back="Umbra Cape",waist="Goading Belt",legs="Bokwus Slops",feet="Hagondes Sabots"}

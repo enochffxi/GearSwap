@@ -48,14 +48,15 @@ function user_setup()
   state.MagicalDefenseMode:options('MDT')
 
   gear.taeon_head_ta   = { name = "Taeon Chapeau", augments = {'STR+5 DEX+5', 'Accuracy+19 Attack+19', '"Triple Atk."+2'}}
-  gear.taeon_head_pet  = { name = "Taeon Chapeau", augments = {'"Repair" potency +5%', 'Pet: Damage taken -4%', 'Pet: Accuracy+18 Pet: Rng.Acc.+18'}}
   gear.taeon_body_ta   = { name = "Taeon Tabard", augments = {'STR+6 AGI+6', 'Accuracy+12 Attack+12', '"Triple Atk."+2'}}
-  gear.taeon_body_pet  = { name = "Taeon Tabard", augments = {'"Repair" potency +5%', 'Pet: Haste+4%', 'Pet: "Mag. Atk. Bns."+25'}}
   gear.taeon_hands_ta  = { name = "Taeon Gloves", augments = {'STR+5 DEX+5', 'Accuracy+17 Attack+17', '"Triple Atk."+2'}}
-  gear.taeon_hands_pet = { name = "Taeon Gloves", augments = {'"Repair" potency +5%', 'Pet: Haste+5%', 'Pet: "Mag. Atk. Bns."+24'}}
   gear.taeon_legs_ta   = { name = "Taeon Tights", augments = {'STR+4 VIT+4', 'Accuracy+12 Attack+12', '"Triple Atk."+2'}}
-  gear.taeon_legs_pet  = { name = "Taeon Tights", augments = {'Pet: Damage taken -3%', 'Pet: Accuracy+18 Pet: Rng.Acc.+18', 'Pet: "Dbl. Atk."+4'}}
   gear.taeon_feet_ta   = { name = "Taeon Boots", augments = {'STR+7 CHR+7', 'Accuracy+8 Attack+8', '"Triple Atk."+2'}}
+
+  gear.taeon_head_pet  = { name = "Taeon Chapeau", augments = {'"Repair" potency +5%', 'Pet: Damage taken -4%', 'Pet: Accuracy+18 Pet: Rng.Acc.+18'}}
+  gear.taeon_body_pet  = { name = "Taeon Tabard", augments = {'"Repair" potency +5%', 'Pet: Haste+4%', 'Pet: "Mag. Atk. Bns."+25'}}
+  gear.taeon_hands_pet = { name = "Taeon Gloves", augments = {'"Repair" potency +5%', 'Pet: Haste+5%', 'Pet: "Mag. Atk. Bns."+24'}}
+  gear.taeon_legs_pet  = { name = "Taeon Tights", augments = {'Pet: Damage taken -3%', 'Pet: Accuracy+18 Pet: Rng.Acc.+18', 'Pet: "Dbl. Atk."+4'}}
   gear.taeon_feet_pet  = { name = "Taeon Boots", augments = {'Pet: Damage taken -3%', 'Pet: Accuracy+24 Pet: Rng.Acc.+24', 'Pet: "Dbl. Atk."+4'}}
 
   send_command('bind ^= gs c cycle treasuremode')
@@ -127,7 +128,7 @@ function init_gear_sets()
   sets.midcast.Pet.Cure = {
     head="Naga Somen",
     body="Naga Samue",hands="Regimen Mittens",ring1="Kunaji Ring",ring2="Thurandaut Ring",
-    back="Refraction Cape",waist="Ukko Sash",legs="Naga Hakama",feet="Foire Bab. +1"}
+    back="Refraction Cape",waist="Gishdubar Sash",legs="Naga Hakama",feet="Foire Bab. +1"}
 
   sets.midcast.Pet['Elemental Magic'] = {main="Nibiru Sainti",
     head="Rawhide Mask",ear1="Charivari Earring",ear2="Burana Earring",
@@ -150,14 +151,16 @@ function init_gear_sets()
 
   -- Idle sets
   sets.idle = {
-    main="Kenkonken",ammo="Automat. Oil +3",
+    ammo="Automat. Oil +3",
     head="Pitre Taj +1",neck="Sanctity Necklace",ear1="Infused Earring",ear2="Burana Earring",
-    body=gear.taeon_body_ta,hands="Count's Cuffs",ring1="Sheltered Ring",ring2="Paguroidea Ring",
+    body="Gyve Doublet",hands="Count's Cuffs",ring1="Sheltered Ring",ring2="Paguroidea Ring",
     back="Kumbira Cape",waist="Lycopodium Sash",legs="Rao Haidate +1",feet="Hermes' Sandals +1"}
 
   -- Set for idle while pet is out (eg: pet regen gear)
   sets.idle.Pet = set_combine(sets.idle, {main="Ohtas",neck="Empath Necklace",ring2="Thurandaut Ring",back="Contriver's Cape",waist="Isa Belt"})
-  sets.idle.Pet.Nuke = set_combine(sets.idle, {main="Denouements"})
+  sets.idle.Pet.Magic = set_combine(sets.idle, {main="Denouements"})
+  sets.idle.Pet.Heal = sets.idle.Pet.Magic
+  sets.idle.Pet.Nuke = sets.idle.Pet.Magic
 
   -- Idle sets to wear while pet is engaged
   sets.idle.Pet.Engaged = {
@@ -166,9 +169,10 @@ function init_gear_sets()
     body=gear.taeon_body_pet,hands="Regimen Mittens",ring1="Overbearing Ring",ring2="Thurandaut Ring",
     back="Penetrating Cape",waist="Ukko Sash",legs=gear.taeon_legs_pet,feet="Naga Kyahan"}
 
-  sets.idle.Pet.Engaged.Ranged = sets.idle.Pet.Engaged
+  sets.idle.Pet.Engaged.Ranged = set_combine(sets.idle.Pet.Engaged, {main="Nibiru Sainti",feet="Punchinellos"})
   sets.idle.Pet.Engaged.Nuke = set_combine(sets.idle.Pet.Engaged, {main="Denouements",legs="Karaggoz Pantaloni +1",feet="Pitre Babouches +1"})
   sets.idle.Pet.Engaged.Magic = set_combine(sets.idle.Pet.Engaged, {main="Denouements"})
+  sets.idle.Pet.Engaged.Heal = sets.idle.Pet.Engaged.Magic
 
  	sets.idle.Pet.Engaged.Tank = set_combine(sets.idle.Pet.Engaged, {
     head="Rao Kabuto +1",

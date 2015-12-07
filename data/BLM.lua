@@ -69,10 +69,10 @@ function init_gear_sets()
 
     -- Fast cast sets for spells
 
-    sets.precast.FC = {ammo="Impatiens",
-        head="Nahtirah Hat",ear2="Loquacious Earring",
-        body="Helios Jacket",ring1="Prolix Ring",
-        waist="Witful Belt",legs="Psycloth Lappas",feet="Regal Pumps +1"}
+    sets.precast.FC = {ammo="Sapience Orb",
+        head="Psycloth Tiara",ear1="Etiolation Earring",ear2="Loquacious Earring",
+        body="Anhur Robe",ring1="Prolix Ring",
+        back="Swith Cape",waist="Witful Belt",legs="Psycloth Lappas",feet="Merlinic Crackows"}
 
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash"})
 
@@ -138,10 +138,10 @@ function init_gear_sets()
 
     -- Elemental Magic sets
 
-    sets.midcast['Elemental Magic'] = {main="Keraunos",sub="Wise Strap",ammo="Dosis Tathlum",
-        head="Helios Band",neck="Eddy Necklace",ear1="Strophadic Earring",ear2="Barkarole Earring",
-        body="Supay Weskit",hands="Helios Gloves",ring1="Galdr Ring",ring2="Strendu Ring",
-        back="Bane Cape",waist="Sekhmet Corset",legs="Hagondes Pants",feet="Helios Boots"}
+    sets.midcast['Elemental Magic'] = {main="Lathi",sub="Elder's Grip +1",ammo="Dosis Tathlum",
+        head="Welkin Crown",neck="Eddy Necklace",ear1="Friomisi Earring",ear2="Barkarole Earring",
+        body="Spaekona's Coat +1",hands="Helios Gloves",ring1="Acumen Ring",ring2="Strendu Ring",
+        back="Toro Cape",waist="Refoccilation Stone",legs="Hagondes Pants +1",feet="Merlinic Crackows"}
 
     sets.midcast['Elemental Magic'].Resistant = set_combine(sets.midcast['Elemental Magic'], {body="Helios Jacket"})
 
@@ -170,8 +170,8 @@ function init_gear_sets()
 
     -- Normal refresh idle set
     sets.idle = {ammo="Dosis Tathlum",
-        head="Hike Khat",neck="Wiglen Gorget",ear1="Dawn Earring",ear2="Colossus's Earring",
-        body="Supay Weskit",hands="Serpentes Cuffs",ring1="Sheltered Ring",ring2="Paguroidea Ring",
+        head="Befouled Crown",neck="Sanctity Necklace",ear1="Etiolation Earring",ear2="Infused Earring",
+        body="Hagondes Coat +1",hands="Serpentes Cuffs",ring1="Defending Ring",ring2="Succor Ring",
         back="Shadow Mantle",waist="Lycopodium Sash",legs="Assiduity Pants +1",feet="Herald's Gaiters"}
 
     -- Defense sets

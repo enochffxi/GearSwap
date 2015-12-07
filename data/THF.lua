@@ -88,11 +88,11 @@ function init_gear_sets()
 	sets.precast.JA['Flee'] = {feet="Pillager's Poulaines +1"}
 	sets.precast.JA['Hide'] = {body="Pillager's Vest +1"}
 	sets.precast.JA['Conspirator'] = {body="Skulker's Vest"}
-	sets.precast.JA['Steal'] = {head="Plunderer's Bonnet",hands="Pillager's Armlets +1",legs="Pillager's Culottes +1",feet="Pillager's Poulaines +1"}
+	sets.precast.JA['Steal'] = {head="Plunderer's Bonnet +1",hands="Pillager's Armlets +1",legs="Pillager's Culottes +1",feet="Pillager's Poulaines +1"}
 	sets.precast.JA['Despoil'] = {legs="Skulker's Culottes +1",feet="Skulker's Poulaines"}
 	sets.precast.JA['Perfect Dodge'] = {hands="Plunderer's Armlets +1"}
 	sets.precast.JA['Feint'] = {legs="Plunderer's Culottes +1"}
-	sets.precast.JA['Mug'] = {head="Plunderer's Bonnet"}
+	sets.precast.JA['Mug'] = {head="Plunderer's Bonnet +1"}
 
 	sets.precast.JA['Sneak Attack'] = sets.buff['Sneak Attack']
 	sets.precast.JA['Trick Attack'] = sets.buff['Trick Attack']
@@ -222,7 +222,7 @@ function init_gear_sets()
 	-- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 
 	sets.idle = {ammo="Ginsen",
-		head="Taeon Chapeau",neck="Wiglen Gorget",ear1="Dawn Earring",ear2="Infused Earring",
+		head="Taeon Chapeau",neck="Sanctity Necklace",ear1="Etiolation Earring",ear2="Infused Earring",
 		body="Plunderer's Vest +1",hands="Plunderer's Armlets +1",ring1="Sheltered Ring",ring2="Paguroidea Ring",
 		back="Shadow Mantle",waist="Flume Belt",legs="Samnuha Tights",feet="Pillager's Poulaines +1"}
 
